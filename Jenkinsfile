@@ -26,12 +26,6 @@ pipeline {
                 dockerpush("notes-app")
             }
         }
-
-        stage("Deploy") {
-            steps {
-                deploy()
-            }
-        }
     }
 }
 @Library('Shared')_
